@@ -30,6 +30,11 @@ tasks {
 If a project is called `hello-kotlin`, the default skinny jar is `hello-kotlin.jar`.
 The fat jar will in turn be named `hello-kotlin-fat.jar` in this example.
 
+To change the ${project.name} variable you can override it in settings.gradle.kts 
+
+```settings.gradle.kts
+rootProject.name = "hello-kotlin"
+```
 
 Then run `gradle build` from the project root to compile the project and create the jar artifact.
 By default it is created under: "build/libs/project-name-fat.jar"
