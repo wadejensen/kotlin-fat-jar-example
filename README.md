@@ -5,7 +5,7 @@ a "fatJar" task as a dependency to the gradle build step.
 
 Add the following to your `build.gradle.kts` file: 
 
-```
+```kotlin
 import org.gradle.jvm.tasks.Jar
 
 val fatJar = task("fatJar", type = Jar::class) {
